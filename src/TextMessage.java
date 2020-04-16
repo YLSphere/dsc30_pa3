@@ -1,3 +1,7 @@
+/*
+ * NAME: Yin Lam Lai
+ * PID: A115779757
+ */
 public class TextMessage extends Message {
 
     // Error message to use in OperationDeniedException

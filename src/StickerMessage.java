@@ -1,3 +1,7 @@
+/*
+ * NAME: Yin Lam Lai
+ * PID: A115779757
+ */
 public class StickerMessage extends Message {
 
     // instance variable
