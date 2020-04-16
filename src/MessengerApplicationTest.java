@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 import com.sun.tools.doclets.standard.Standard;
 import org.junit.*;
 
-public class MessenengerApplicationTest {
+public class MessengerApplicationTest {
     /*
       Messages defined in starter code. Remember to copy and paste these strings to the
       test file if you cannot directly access them. DO NOT change the original declaration
