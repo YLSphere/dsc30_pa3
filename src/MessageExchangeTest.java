@@ -199,7 +199,7 @@ public class MessageExchangeTest {
 
         // TEST CONSTRUCTOR
         try {
-            StickerMessage test1 = new StickerMessage(yeet, "Emoji/SadFace");
+            StickerMessage test1 = new StickerMessage(yeet, "IfYouSeeThis/SayWassup");
         } catch (OperationDeniedException e){
             System.out.println(e.getMessage());
         }
