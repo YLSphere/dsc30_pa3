@@ -3,12 +3,12 @@ import static org.junit.Assert.*;
 
 import com.sun.tools.doclets.standard.Standard;
 import org.junit.*;
-public class MessageExchangeTest {
-        /*
-          Messages defined in starter code. Remember to copy and paste these strings to the
-          test file if you cannot directly access them. DO NOT change the original declaration
-          to public.
-         */
+public class MessageApplicationTest {
+    /*
+      Messages defined in starter code. Remember to copy and paste these strings to the
+      test file if you cannot directly access them. DO NOT change the original declaration
+      to public.
+     */
     private static final String INVALID_INPUT =
             "The source path given cannot be parsed as photo.";
 
