@@ -4,8 +4,6 @@
  */
 import java.time.LocalDate;
 import static org.junit.Assert.*;
-
-import com.sun.tools.doclets.standard.Standard;
 import org.junit.*;
 
 public class MessengerApplicationTest {
