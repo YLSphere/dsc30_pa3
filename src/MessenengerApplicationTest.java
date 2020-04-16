@@ -7,7 +7,8 @@ import static org.junit.Assert.*;
 
 import com.sun.tools.doclets.standard.Standard;
 import org.junit.*;
-public class MessageApplicationTest {
+
+public class MessenengerApplicationTest {
     /*
       Messages defined in starter code. Remember to copy and paste these strings to the
       test file if you cannot directly access them. DO NOT change the original declaration
@@ -46,7 +47,7 @@ public class MessageApplicationTest {
     /*
       Recap: Assert exception without message
      */
-    @Test (expected = IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testPremiumUserThrowsIAE() {
         marina = new PremiumUser("Marina", null);
     }
@@ -234,10 +235,5 @@ public class MessageApplicationTest {
             System.out.println(e.getMessage());
         }
     }
+
 }
-
-
-
-
-
-
