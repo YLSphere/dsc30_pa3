@@ -2,8 +2,6 @@
  * NAME: Yin Lam Lai
  * PID: A115779757
  */
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Standard user class that extends User
@@ -19,10 +17,24 @@ public class StandardUser extends User {
             "This message cannot be fetched because you are not a premium user.";
     private static final int ONE_TENTH_MESSAGES = 10;
 
+
+    /**
+     * Constructor for StandardUser
+     *
+     * @param username current user's username
+     * @param bio current user's bio
+     */
     public StandardUser(String username, String bio) {
         super(username, bio);
     }
 
+    /**
+     * Message retrieve by a standard user. They can only receive the latest one tenth
+     * of messages and can only receive text messages
+     *
+     * @param me current interface(room) that extends users
+     * @return the returned messages as a combined string
+     */
     public String fetchMessage(MessageExchange me) {
         if (me == null) {
             throw new IllegalArgumentException();
@@ -36,7 +48,7 @@ public class StandardUser extends User {
         for (int n = size - oneTenth; n < size; n++) {
             Message message = me.getLog().get(n);
             if (message instanceof PhotoMessage || message instanceof StickerMessage) {
-                returned = returned + FETCH_DENIED_MSG;
+                returned += FETCH_DENIED_MSG;
             } else {
                 returned += message.getContents();
             }
@@ -47,6 +59,10 @@ public class StandardUser extends User {
         return returned;
     }
 
+    /**
+     * returns the user's username
+     * @return user's username
+     */
     public String displayName() {
         return username;
     }

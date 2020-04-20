@@ -17,6 +17,11 @@ public abstract class Message {
     private User sender;
     protected String contents;
 
+    /**
+     * Constructor for the Message abstract class
+     *
+     * @param sender the sender of the message
+     */
     public Message(User sender) {
         this.date = LocalDate.now();
         if (sender == null) {
@@ -25,15 +30,26 @@ public abstract class Message {
             this.sender = sender;
         }
     }
+    /**
+     * Returns current date
+     * @return current date
+     */
 
     public LocalDate getDate() {
         return date;
     }
 
+    /**
+     * Returns sender's username
+     * @return current sender
+     */
     public User getSender() {
         return sender;
     }
 
+    /**
+     * Abstract method implemented in sticker, photo, and text message class
+     */
     public abstract String getContents();
 
 }

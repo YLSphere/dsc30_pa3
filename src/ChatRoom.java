@@ -38,6 +38,4 @@ public class ChatRoom implements MessageExchange {
         log.add(m);
         return true;
     }
-
-
 }

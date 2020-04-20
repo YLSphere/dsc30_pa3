@@ -2,7 +2,16 @@
  * NAME: Yin Lam Lai
  * PID: A115779757
  */
+
+
 import java.util.ArrayList;
+
+/**
+ * Premium user class that extends User
+ *
+ * @author Yin Lam Lam
+ * @since 14/4/2020
+ */
 
 /**
  * MessageExchange interface declarations. DO NOT MODIFY.
